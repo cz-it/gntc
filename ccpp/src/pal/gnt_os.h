@@ -32,7 +32,6 @@ extern "C"
 #	include <process.h>
 #else
 #	include <unistd.h>
-#	include <endian.h>
 #	include <libgen.h>
 #endif
 

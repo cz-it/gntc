@@ -2,7 +2,7 @@
 #define GNT_SOCKET_H_
 
 
-#include <gnt_os.h>
+#include "gnt_os.h"
 
 #include <stdio.h>
 #include <stdlib.h>

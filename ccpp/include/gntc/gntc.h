@@ -6,6 +6,8 @@ extern "C"
 {
 #endif
 
+#include <stddef.h>
+    
 extern int gntc_init();
 
 extern int gntc_connect(char *url,float timeout);
