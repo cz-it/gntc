@@ -24,12 +24,12 @@ int gntc_reconnect(int hdl)
     return 0;
 }
 
-int gntc_send(int hdl,const void *buf, size_t len, float timeout)
+int gntc_sendbuf(int hdl,const void *buf, size_t len, float timeout)
 {
     return 0;
 }
 
-int gntc_recv(int hdl, void *buf, size_t len,float timeout)
+int gntc_recvbuf(int hdl, void *buf, size_t len,float timeout)
 {
     return 0;
 }
