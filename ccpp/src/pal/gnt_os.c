@@ -1,4 +1,4 @@
-#include <gnt_os.h>
+#include "gnt_os.h"
 
 /**
 * for windows api

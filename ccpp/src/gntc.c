@@ -7,6 +7,7 @@
 
 int gntc_init(gntc_line *line)
 {
+    gnt_socket_init(2,2);
     line->recvbuf = line->sendbuf = NULL;
     line->recvbufcap = line->recvbuflen = 0;
     line->sendbufcap = line->sendbuflen = 0;
@@ -17,6 +18,11 @@ int gntc_init(gntc_line *line)
 int gntc_connect(char *url,float timeout)
 {
     // first do connect to server with socket
+    int sfd = gnt_net_connect(url,timeout);
+    
+    if (sfd<0) {
+        return -2;
+    }
     
     // second send connect request and recive response
     
